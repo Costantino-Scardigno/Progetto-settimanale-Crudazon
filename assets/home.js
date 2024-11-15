@@ -18,11 +18,11 @@ const homePage = function () {
             const row = document.getElementById("contcard");
             arrcar.forEach((car) => {
                 const col = document.createElement("div");
-                col.className = "col-md-4 col-lg-3";
+                col.className = "col-md-6 col-lg-6";
                 col.id = `product-${car._id}`; 
 
                 const card = document.createElement("div");
-                card.className = "card ";
+                card.className = "card mt-4 ";
 
                 const imgCard = document.createElement("img");
                 imgCard.className = "card-img-top";
@@ -44,9 +44,11 @@ const homePage = function () {
 
                 const price = document.createElement("p");
                 price.innerText = `€ ${car.price}`;
+                const btncontainer= document.createElement("div")
+                btncontainer.className=("d-flex justify-content-between")
 
                 const btnModCard = document.createElement("a");
-                btnModCard.className = "btn btn-primary";
+                btnModCard.className = "btn btn-primary  m-4";
                 btnModCard.innerText = "Modifica";
 
                 btnModCard.addEventListener("click", () => {
@@ -54,7 +56,7 @@ const homePage = function () {
                 });
 
                 const btnDelete = document.createElement("button"); 
-                btnDelete.className = "btn btn-danger m-4";
+                btnDelete.className = "btn btn-danger m-4 ";
                 btnDelete.innerText = "Elimina";
 
                 // Listener per il pulsante "Elimina"
@@ -70,8 +72,9 @@ const homePage = function () {
                 cardBody.appendChild(descriptioncard);
                 cardBody.appendChild(brand);
                 cardBody.appendChild(price);
-                cardBody.appendChild(btnModCard);
-                cardBody.appendChild(btnDelete);
+                cardBody.appendChild(btncontainer)
+                btncontainer.appendChild(btnModCard);
+                btncontainer.appendChild(btnDelete);
             });
         })
         .catch((error) => {

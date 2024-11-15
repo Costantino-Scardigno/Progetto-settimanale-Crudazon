@@ -51,11 +51,16 @@ form.onsubmit = (e) => {
     })
         .then((response) => {
             if (response.ok) {
-                alert("Prodotto modificato con successo!");
-                window.location.href = "home.html"; 
+                const successModal = new bootstrap.Modal(document.getElementById("successModal"));
+                successModal.show(); 
             } else {
                 throw new Error("Errore durante l'aggiornamento");
             }
         })
         .catch((error) => console.error("Errore:", error));
 };
+
+
+function redirectToHome() {
+    window.location.href = "home.html";
+}
