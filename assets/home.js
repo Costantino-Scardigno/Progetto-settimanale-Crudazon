@@ -18,7 +18,7 @@ const homePage = function () {
             const row = document.getElementById("contcard");
             arrcar.forEach((car) => {
                 const col = document.createElement("div");
-                col.className = "col-md-6 col-lg-6";
+                col.className = "col-md-6 col-lg-6 col-xl-4";
                 col.id = `product-${car._id}`; 
 
                 const card = document.createElement("div");

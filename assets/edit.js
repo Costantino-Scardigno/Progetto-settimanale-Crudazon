@@ -6,12 +6,17 @@ const params = new URLSearchParams(window.location.search);
 const productId = params.get("id");
 
 
-const form = document.getElementById("form");
+const form = document.getElementById("formPost"); 
 const nameInput = document.getElementById("name-1");
 const descriptionInput = document.getElementById("desc-1");
 const brandInput = document.getElementById("brand-1");
 const priceInput = document.getElementById("price-1");
 const imageUrlInput = document.getElementById("imageUrl-1");
+
+
+
+
+
 
 
 fetch(`${URL}${productId}`, {
@@ -63,4 +68,15 @@ form.onsubmit = (e) => {
 
 function redirectToHome() {
     window.location.href = "home.html";
+}
+
+// Il reset funziona se premuto 2 volte 
+function btnReset() {
+const form = document.getElementById("formPost");
+const resetButton = document.getElementById("btn-reset");
+resetButton.addEventListener("click", () => {
+  form.reset(); 
+});
+
+    
 }

@@ -25,19 +25,13 @@ header {
     background: rgba(255, 255, 255, 0.2);
 }
 
-h1 {
+h1 h2 p {
     font-family: "Arimo", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
 
-p {
-    font-family: "Arimo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
 
 
 .card {
