@@ -1,0 +1,19 @@
+body {
+   background-image: url(https://www.bmw.it/content/dam/bmw/common/all-models/m-series/x6m/2023/highlights/bmw-m-series-x6-m-technologies-highlights-hero-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1719475634469.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+  
+}
+
+
+#form {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+

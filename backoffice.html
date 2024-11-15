@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Crudazon</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Crudazon</a>
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bg-light"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item text-info">
+                <a class="nav-link text-info" href="#">BackOffice</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <h1 class="text-center mt-4 display-1 text-white">Back Office</h1>
+    <section class="position-relative py-4 py-xl-5">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+            <div id="form" class="card mb-5 rounded-4">
+              <div class="card-body p-sm-5">
+                <h2 class="text-center mb-4 text-white">
+                  &nbsp;Create Product Car
+                </h2>
+                <form id="formPost" method="post">
+                  <div class="mb-3">
+                    <input
+                      class="form-control rounded-3"
+                      type="text"
+                      id="name-1"
+                      name="name"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      class="form-control rounded-3"
+                      type="text"
+                      id="desc-1"
+                      placeholder="Description"
+                      v=""
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      class="form-control rounded-3"
+                      type="text"
+                      id="brand-1"
+                      placeholder="Brand"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      class="form-control rounded-3"
+                      type="text"
+                      id="price-1"
+                      placeholder="Price"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      class="form-control rounded-3"
+                      type="text"
+                      id="imageUrl-1"
+                      placeholder="Url Image"
+                    />
+                  </div>
+                  <div class="mb-3"></div>
+                  <div>
+                    <button
+                      id="btn-1"
+                      class="btn btn-primary d-block w-100 rounded-pill"
+                      type="submit"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/backoffice.js"></script>
+  </body>
+</html>
